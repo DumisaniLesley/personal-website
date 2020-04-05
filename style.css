@@ -1,0 +1,390 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* header section */
+.brand-logo{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+nav li a{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+nav li a:hover{
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(49, 17, 124);
+    background-color: white;
+}
+
+#hero{
+    padding: 50px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+}
+
+#hero h2{
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 5px;
+    animation: animationFrames ease-in 3s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode: backwards;
+}
+
+#hero h5{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 10px;
+    animation: animationFrames ease-out 3s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode:forwards;
+}
+
+/******/
+#hero img {
+  animation: animationFrames ease-in-out 3s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+}
+
+@keyframes animationFrames{
+  0% {
+    opacity: 0.5;
+    transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+/******/
+
+
+/* About Me Section*/
+.about-me {
+    padding: 100px;
+    background-color: rgb(49, 17, 124);
+}
+
+.about-me h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 0px;
+}
+
+.about-me P{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 0px;
+}
+
+#skills{
+    width: 85%;
+    padding: 20PX;
+    background-color: white;
+    margin-top: -60px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 11px 24px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 11px 24px -3px rgba(0,0,0,1);
+    box-shadow: 0px 11px 24px -3px rgba(0,0,0,1);
+}
+
+#skills img{
+    width: 70px;
+    margin: 20px;
+    color: blue;
+}
+
+#skills h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#skills h5{
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+}
+
+#skills p{
+    font-size: 17px;
+    font-weight: 450;
+}
+
+#col{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.hr{
+    display: none;
+}
+
+.works {
+    padding: 70px;
+    margin-top: 30px;
+    background-color: rgb(49, 17, 124);
+}
+
+.works h4 {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.works p {
+    font-size: 20px;
+    font-weight: 450;
+    color: white;
+}
+
+.works img {
+    width: 250px;
+    transition: filter .4s ease-in-out;
+    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%);
+}
+
+.works img:hover{
+    cursor: pointer;
+    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%); /* FF 35+ */
+}
+
+.works .btn {
+    width: 300px;
+    border-radius: 30px;
+    background-color: white;
+    color: rgb(49, 17, 124);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.works .btn:hover {
+    background-color:rgb(49, 17, 124);
+    color: white;
+    border: 2px solid white;
+    font-weight: 500;
+}
+
+.partners{
+    padding: 70px;
+}
+
+.partners h4 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.partners img{
+    width: 100px;
+}
+
+.line {
+    width: 80%; 
+}
+
+.conversation{
+    padding: 60px;
+    background-color: rgb(49, 17, 124);
+}
+
+.conversation h4 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.conversation p {
+    font-size: 20px;
+    font-weight: 450;
+    color: white;
+}
+
+.conversation .btn {
+    width: 300px;
+    border-radius: 30px;
+    background-color: white;
+    color: rgb(49, 17, 124);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.conversation .btn:hover {
+    background-color:rgb(49, 17, 124);
+    color: white;
+    border: 2px solid white;
+}
+
+.footer{
+    padding: 50px;
+}
+
+.footer h4 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.footer p {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.footer .btn-floating{
+    margin: 15px;
+}
+
+.footer .btn-floating:hover{
+    border: 1px solid rgb(49, 17, 124);
+    background-color: black!important;
+}
+
+.footer h5{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(49, 17, 124);
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 670px){
+    header{
+      min-height: 500px;
+    }
+
+    #hero h2{
+        font-size: 30px;
+    }
+    #hero h5{
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 0px;
+    }
+
+    .about-me {
+        padding: 50px;
+    }
+
+    .about-me h3{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .about-me P{
+        font-size: 17px;
+    }
+    
+    #skills{
+        width: 85%;
+        margin-top: -40px;
+    }
+
+    #col{
+        border-left: none;
+        border-right: none;
+    }
+
+    .hr{
+        display: block;
+        width: 80%;
+    }
+
+    .works {
+        padding: 40px;
+    }
+
+    .works h4 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+
+    .works img {
+        margin: 10px;
+    }
+
+    .works .btn {
+        width: 150px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .partners{
+        padding: 40px;
+    }
+    
+    .partners h4 {
+        font-size: 25px;
+    }
+    
+    .line {
+        display: none;
+    }
+
+    .conversation{
+        padding: 40px;
+    }
+    
+    .conversation h4 {
+        font-size: 20px;
+    }
+    
+    .conversation p {
+        font-size: 15px;
+    }
+    
+    .conversation .btn {
+        width: 150px;
+        font-size: 8px;
+        font-weight: bold;
+    }
+
+    .footer{
+        padding: 50px;
+    }
+    
+    .footer h4 {
+        font-size: 20px;
+    }
+    
+    .footer p {
+        font-size: 10px;
+    }
+
+    .footer h5 {
+        font-size: 20px;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+    
+    .footer .btn-floating{
+        margin: 4px;
+    }
+}
+
+
